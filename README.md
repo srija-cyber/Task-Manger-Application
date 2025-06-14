@@ -1,42 +1,36 @@
-##Task Manager Application
-A simple yet elegant task management application built with Angular that allows users to create, track, and manage their tasks with priority levels.
+# Task Manager App (Angular)
 
-##Features
-#Add Tasks: Create new tasks with names and priority levels (High, Medium, Low)
+This is a simple Task Manager web application built with Angular. It allows users to add tasks with a name and priority, view them in a list, and mark them as completed. It demonstrates component communication, data binding, and Angular directives.
 
-#Visual Priority Indicators: Color-coded priority badges (🔴 High, 🟠 Medium, 🟢 Low)
+## 🔧 Features
 
-#Status Tracking: Mark tasks as pending (⏳) or completed (✅)
+- Add tasks with a **name** and **priority** (High, Medium, Low)
+- View task list in a **child component**
+- Mark tasks as **Completed**
+- Show **"No tasks available"** message when the list is empty
+- Dynamic styling based on **task priority** and **status**
 
-#Responsive Design: Works well on both desktop and mobile devices
+## 📚 Angular Concepts Used
 
-#Clean UI: Modern card-based layout with subtle animations
+- `@Input()` and `@Output()` for parent-child communication
+- Two-way binding using `[(ngModel)]`
+- Template Reference Variables
+- Directives: `*ngIf`, `*ngFor`, `ngSwitch`, `ngClass`, `ngStyle`
+- Event Binding: `(click)`
 
-#Technologies Used
-Angular (Standalone Components)
+## 🏗️ Component Structure
 
-#TypeScript
+- `task-manager` (Parent)
+  - Handles task creation and manages the task list
+- `task-list` (Child)
+  - Displays the list of tasks and emits events when a task is completed
 
-#SCSS for styling
+## 🚀 Getting Started
 
-#Template-driven forms
-
-#Installation
-Clone the repository:
-
-#bash
-git clone https://github.com/your-repo/task-manager.git
-cd task-manager
-
-#Install dependencies:
-
-bash
-npm install
-
-#Run the development server:
-
-bash
-ng serve
+1. Clone the repo  
+   ```bash
+   git clone https://github.com/your-username/task-manager-angular.git
+   cd task-manager-angular
 
 
 #Project Structure
